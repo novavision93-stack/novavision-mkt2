@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nova Vision | Marketing de Lujo Impulsado por IA</title>
+  <meta name="description" content="Nova Vision — Diseñamos legados digitales con precisión quirúrgica. Marketing de lujo impulsado por inteligencia artificial." />
+  <meta name="keywords" content="marketing de lujo, IA, branding, video producción, web design, Nova Vision" />
+  <meta property="og:title" content="Nova Vision | Marketing & AI" />
+  <meta property="og:description" content="La Inteligencia es la Nueva Visión." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!--  NAV                                       -->
+  <!-- ══════════════════════════════════════════ -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" id="nav-logo-link" aria-label="Nova Vision inicio">
+        <img src="nova_vision_premium_v1.png" alt="Nova Vision Logo" class="nav-logo-img" />
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#philosophy">Filosofía</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#pricing">Inversión</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+      <button class="nav-cta" id="nav-cta-btn" onclick="openWhatsApp('general')">Hablar con Nosotros</button>
+      <button class="hamburger" id="hamburger-btn" aria-label="Menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!--  HERO                                      -->
+  <!-- ══════════════════════════════════════════ -->
+  <section id="hero" class="hero">
+    <div class="hero-video-wrap">
+      <video
+        id="hero-video"
+        class="hero-video"
+        src="Triangle_and_ring_animation_202605171511.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+      ></video>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-logo-wrap" id="hero-logo-wrap">
+        <img src="nova_vision_premium_v1.png" alt="Nova Vision" class="hero-logo" id="hero-logo" />
+        <div class="logo-shine" id="logo-shine" aria-hidden="true"></div>
+      </div>
+
+      <h1 class="hero-title" id="hero-title">
+        La Inteligencia es<br /><em>la Nueva Visión.</em>
+      </h1>
+      <p class="hero-subtitle" id="hero-subtitle">
+        Marketing de lujo impulsado por IA.
+      </p>
+
+      <a href="#services" class="btn-discover" id="btn-discover" aria-label="Descubrir nuestros servicios">
+        <span>Descubrir</span>
+        <div class="btn-aura" aria-hidden="true"></div>
+      </a>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span class="scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!--  PHILOSOPHY                                -->
+  <!-- ══════════════════════════════════════════ -->
+  <section id="philosophy" class="philosophy">
+    <div class="philosophy-bg-art" aria-hidden="true">
+      <div class="gear-ring gear-ring-1"></div>
+      <div class="gear-ring gear-ring-2"></div>
+      <div class="circuit-dots" id="circuit-dots"></div>
+    </div>
+
+    <div class="philosophy-content">
+      <p class="philosophy-label reveal-text" id="phil-label">Filosofía de Marca</p>
+      <h2 class="philosophy-quote" id="phil-quote" aria-live="polite">
+        <!-- Filled by JS laser-type effect -->
+      </h2>
+      <div class="philosophy-line" id="phil-line" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!--  SERVICES                                  -->
+  <!-- ══════════════════════════════════════════ -->
+  <section id="services" class="services">
+    <div class="section-header reveal-up">
+      <p class="section-label">El Atelier</p>
+      <h2 class="section-title">Servicios de Distinción</h2>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- Web Design -->
+      <article class="service-card reveal-depth" id="card-web" style="--delay:0s">
+        <div class="card-glow" aria-hidden="true"></div>
+        <div class="service-icon-wrap">
+          <div class="service-icon icon-canvas" id="icon-canvas" aria-hidden="true">
+            <div class="canvas-inner">
+              <div class="canvas-frame"></div>
+              <div class="canvas-expand"></div>
+            </div>
+          </div>
+        </div>
+        <h3 class="service-name">Web Design</h3>
+        <p class="service-desc">
+          Experiencias digitales que trascienden lo convencional. Cada pixel, una declaración de intención.
+        </p>
+        <div class="service-accent" aria-hidden="true"></div>
+      </article>
+
+      <!-- Video Production -->
+      <article class="service-card reveal-depth" id="card-video" style="--delay:0.15s">
+        <div class="card-glow" aria-hidden="true"></div>
+        <div class="service-icon-wrap">
+          <div class="service-icon icon-shutter" id="icon-shutter" aria-hidden="true">
+            <div class="shutter-ring">
+              <div class="shutter-blade"></div>
+              <div class="shutter-blade"></div>
+              <div class="shutter-blade"></div>
+              <div class="shutter-blade"></div>
+              <div class="shutter-center"></div>
+            </div>
+          </div>
+        </div>
+        <h3 class="service-name">Video Production</h3>
+        <p class="service-desc">
+          Cinematografía de lujo que convierte historias en emociones y emociones en decisiones.
+        </p>
+        <div class="service-accent" aria-hidden="true"></div>
+      </article>
+
+      <!-- AI Branding -->
+      <article class="service-card reveal-depth" id="card-ai" style="--delay:0.3s">
+        <div class="card-glow" aria-hidden="true"></div>
+        <div class="service-icon-wrap">
+          <div class="service-icon icon-neural" id="icon-neural" aria-hidden="true">
+            <svg class="neural-svg" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Nodes -->
+              <circle cx="40" cy="10" r="4" class="n-node"/>
+              <circle cx="15" cy="35" r="4" class="n-node"/>
+              <circle cx="65" cy="35" r="4" class="n-node"/>
+              <circle cx="25" cy="65" r="4" class="n-node"/>
+              <circle cx="55" cy="65" r="4" class="n-node"/>
+              <circle cx="40" cy="40" r="5" class="n-center"/>
+              <!-- Edges -->
+              <line x1="40" y1="10" x2="40" y2="40" class="n-edge"/>
+              <line x1="15" y1="35" x2="40" y2="40" class="n-edge"/>
+              <line x1="65" y1="35" x2="40" y2="40" class="n-edge"/>
+              <line x1="25" y1="65" x2="40" y2="40" class="n-edge"/>
+              <line x1="55" y1="65" x2="40" y2="40" class="n-edge"/>
+              <line x1="40" y1="10" x2="15" y2="35" class="n-edge n-edge-dim"/>
+              <line x1="40" y1="10" x2="65" y2="35" class="n-edge n-edge-dim"/>
+              <line x1="15" y1="35" x2="25" y2="65" class="n-edge n-edge-dim"/>
+              <line x1="65" y1="35" x2="55" y2="65" class="n-edge n-edge-dim"/>
+              <line x1="25" y1="65" x2="55" y2="65" class="n-edge n-edge-dim"/>
+            </svg>
+          </div>
+        </div>
+        <h3 class="service-name">AI Branding</h3>
+        <p class="service-desc">
+          Inteligencia artificial que aprende la esencia de tu marca y la amplifica con precisión matemática.
+        </p>
+        <div class="service-accent" aria-hidden="true"></div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!--  PRICING                                   -->
+  <!-- ══════════════════════════════════════════ -->
+  <section id="pricing" class="pricing">
+    <div class="section-header reveal-up">
+      <p class="section-label">Galería de Inversión</p>
+      <h2 class="section-title">Certificados de Distinción</h2>
+      <p class="section-sub">Cada plan es una declaración de compromiso con la excelencia.</p>
+    </div>
+
+    <div class="pricing-grid">
+
+      <!-- Plan Video -->
+      <div class="price-card reveal-depth" id="card-video-plan" style="--delay:0s">
+        <div class="price-card-inner">
+          <div class="cert-header">
+            <p class="cert-label">Certificado</p>
+            <h3 class="plan-name">Video Production</h3>
+            <div class="cert-divider"></div>
+          </div>
+          <div class="price-amount">
+            <span class="price-currency">$</span>
+            <span class="price-number">700</span>
+            <span class="price-period">/ proyecto</span>
+          </div>
+          <ul class="plan-features">
+            <li><span class="check-icon">✦</span>Guión & Dirección Creativa</li>
+            <li><span class="check-icon">✦</span>Producción Cinematográfica</li>
+            <li><span class="check-icon">✦</span>Post-Producción Premium</li>
+            <li><span class="check-icon">✦</span>Color Grading de Lujo</li>
+            <li><span class="check-icon">✦</span>2 Revisiones Incluidas</li>
+          </ul>
+          <button class="btn-access" id="btn-access-video" onclick="openWhatsApp('video')" aria-label="Solicitar acceso al plan Video">
+            Solicitar Acceso
+          </button>
+          <div class="cert-watermark" aria-hidden="true">NV</div>
+        </div>
+      </div>
+
+      <!-- Plan Completo — FEATURED -->
+      <div class="price-card price-card--featured reveal-depth" id="card-full-plan" style="--delay:0.1s">
+        <div class="featured-badge" aria-label="Más popular">✦ El Más Completo</div>
+        <div class="price-card-inner">
+          <div class="cert-header">
+            <p class="cert-label">Certificado Supremo</p>
+            <h3 class="plan-name">Plan Completo</h3>
+            <div class="cert-divider cert-divider--silver"></div>
+          </div>
+          <div class="price-amount">
+            <span class="price-currency">$</span>
+            <span class="price-number">2,700</span>
+            <span class="price-period">/ proyecto</span>
+          </div>
+          <ul class="plan-features">
+            <li><span class="check-icon check-icon--silver">✦</span>Todo de Video Production</li>
+            <li><span class="check-icon check-icon--silver">✦</span>Web Design a Medida</li>
+            <li><span class="check-icon check-icon--silver">✦</span>AI Branding Completo</li>
+            <li><span class="check-icon check-icon--silver">✦</span>Estrategia Digital 90 días</li>
+            <li><span class="check-icon check-icon--silver">✦</span>Soporte Prioritario</li>
+            <li><span class="check-icon check-icon--silver">✦</span>Revisiones Ilimitadas</li>
+          </ul>
+          <button class="btn-access btn-access--featured" id="btn-access-full" onclick="openWhatsApp('completo')" aria-label="Solicitar acceso al plan Completo">
+            Solicitar Acceso
+          </button>
+          <div class="cert-watermark cert-watermark--silver" aria-hidden="true">NV</div>
+        </div>
+      </div>
+
+      <!-- Plan Web -->
+      <div class="price-card reveal-depth" id="card-web-plan" style="--delay:0.2s">
+        <div class="price-card-inner">
+          <div class="cert-header">
+            <p class="cert-label">Certificado</p>
+            <h3 class="plan-name">Web Design</h3>
+            <div class="cert-divider"></div>
+          </div>
+          <div class="price-amount">
+            <span class="price-currency">$</span>
+            <span class="price-number">1,600</span>
+            <span class="price-period">/ proyecto</span>
+          </div>
+          <ul class="plan-features">
+            <li><span class="check-icon">✦</span>Diseño UI/UX Premium</li>
+            <li><span class="check-icon">✦</span>Desarrollo a Medida</li>
+            <li><span class="check-icon">✦</span>Optimización SEO</li>
+            <li><span class="check-icon">✦</span>Integración AI</li>
+            <li><span class="check-icon">✦</span>3 Revisiones Incluidas</li>
+          </ul>
+          <button class="btn-access" id="btn-access-web" onclick="openWhatsApp('web')" aria-label="Solicitar acceso al plan Web">
+            Solicitar Acceso
+          </button>
+          <div class="cert-watermark" aria-hidden="true">NV</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!--  CONTACT / FOOTER                          -->
+  <!-- ══════════════════════════════════════════ -->
+  <footer id="contact" class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo-wrap">
+        <img src="nova_vision_premium_v1.png" alt="Nova Vision" class="footer-logo" />
+      </div>
+
+      <p class="footer-tagline">Diseñamos legados digitales.</p>
+
+      <div class="footer-social">
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/novavisionmktg" target="_blank" rel="noopener noreferrer"
+           class="social-link" id="social-instagram" aria-label="Instagram de Nova Vision">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+               stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/523344476121" target="_blank" rel="noopener noreferrer"
+           class="social-link" id="social-whatsapp-footer" aria-label="WhatsApp de Nova Vision">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+          </svg>
+        </a>
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@novavisionmktg" target="_blank" rel="noopener noreferrer"
+           class="social-link" id="social-tiktok" aria-label="TikTok de Nova Vision">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.87a8.18 8.18 0 0 0 4.78 1.52V7a4.85 4.85 0 0 1-1.01-.31z"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="footer-contact">
+        <a href="tel:+523344476121" class="footer-phone" id="footer-phone-link">+52 334 447 6121</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 Nova Vision Marketing & AI. Todos los derechos reservados.</p>
+        <p class="footer-craft">Diseñado con precisión quirúrgica.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!--  FLOATING WhatsApp BUTTON                  -->
+  <!-- ══════════════════════════════════════════ -->
+  <button class="float-wa" id="float-wa-btn" onclick="openWhatsApp('general')"
+          aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+         stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+    </svg>
+    <span class="float-wa-pulse" aria-hidden="true"></span>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+</html>
