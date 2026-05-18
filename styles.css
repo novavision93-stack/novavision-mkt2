@@ -238,3 +238,78 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
   .nav-links.open{display:flex;flex-direction:column;position:fixed;top:72px;left:0;right:0;
     background:rgba(0,0,0,.96);padding:2rem;gap:1.5rem;border-bottom:1px solid rgba(255,255,255,.08)}
 }
+
+/* ── NOSOTROS ────────────────────────────────── */
+.nosotros{position:relative;padding:8rem 0 0;background:var(--dark);overflow:hidden}
+.nv-watermark{position:absolute;top:-40px;right:-10px;font-size:280px;font-weight:100;
+  color:rgba(0,170,255,.03);pointer-events:none;user-select:none;letter-spacing:-10px;line-height:1}
+.container{max-width:1100px;margin:0 auto;padding:0 5vw}
+.nv-eyebrow{font-size:.7rem;font-weight:500;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--blue);margin-bottom:1.5rem;display:flex;align-items:center;gap:14px}
+.nv-eyebrow::before{content:'';display:inline-block;width:32px;height:1px;background:var(--blue);flex-shrink:0}
+.nv-title{font-size:clamp(2rem,5vw,3.5rem);font-weight:100;line-height:1.1;letter-spacing:-.02em;margin-bottom:1rem}
+.nv-title em{font-style:normal;background:linear-gradient(90deg,#fff 20%,var(--blue));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;margin-top:3.5rem}
+.manifesto{font-size:1.1rem;font-weight:200;font-style:italic;line-height:1.65;
+  color:rgba(255,255,255,.85);border-left:1px solid var(--blue);padding-left:1.5rem;margin-bottom:2rem}
+.about-left p{font-size:.88rem;font-weight:300;line-height:1.9;color:rgba(255,255,255,.45);margin-bottom:1.1rem}
+.stat-row{display:flex;gap:2.5rem;margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(192,200,216,.12)}
+.stat-item .stat-num{font-size:3rem;font-weight:100;color:var(--blue);line-height:1}
+.stat-item .stat-label{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;
+  color:rgba(255,255,255,.3);margin-top:.3rem}
+.founders{display:flex;flex-direction:column;gap:1.2rem}
+.founder-card{background:rgba(255,255,255,.03);border:1px solid rgba(192,200,216,.1);
+  padding:1.75rem 2rem;position:relative;transition:border-color .4s,background .4s}
+.founder-card:hover{border-color:rgba(0,170,255,.3);background:rgba(0,170,255,.03)}
+.founder-card::before{content:'✦';position:absolute;top:1.5rem;right:1.5rem;
+  font-size:.6rem;color:var(--blue);opacity:.5}
+.founder-initials{width:44px;height:44px;border:1px solid rgba(0,170,255,.4);display:flex;
+  align-items:center;justify-content:center;font-size:1rem;font-weight:200;color:var(--blue);
+  margin-bottom:1rem;letter-spacing:.05em}
+.founder-name{font-size:1.05rem;font-weight:300;color:#fff;letter-spacing:.03em}
+.founder-role{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--blue);margin-top:.3rem}
+.founder-bio{font-size:.82rem;color:rgba(255,255,255,.4);line-height:1.75;margin-top:.9rem;font-weight:300}
+.slogan-banner{text-align:center;padding:5rem 2rem;background:#000;
+  border-top:1px solid rgba(0,170,255,.1);border-bottom:1px solid rgba(0,170,255,.1);margin-top:5rem;
+  background:radial-gradient(ellipse at center,rgba(0,170,255,.04) 0%,transparent 70%)}
+.slogan-label{font-size:.65rem;letter-spacing:.3em;text-transform:uppercase;
+  color:rgba(255,255,255,.25);margin-bottom:1.2rem}
+.slogan-text{font-size:clamp(1.6rem,4vw,3rem);font-weight:100;font-style:italic;
+  color:rgba(255,255,255,.85);letter-spacing:-.01em}
+
+/* ── PRIVACIDAD ──────────────────────────────── */
+.privacidad{padding:8rem 0;background:#000}
+.privacy-body{display:grid;grid-template-columns:220px 1fr;gap:5rem;margin-top:3rem;align-items:start}
+.privacy-nav{position:sticky;top:90px}
+.privacy-nav-label{font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:var(--blue);margin-bottom:1rem}
+.privacy-nav ul{list-style:none;display:flex;flex-direction:column;gap:2px}
+.privacy-nav a{font-size:.75rem;font-weight:300;color:rgba(255,255,255,.3);display:block;
+  padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,.05);transition:color .3s}
+.privacy-nav a:hover{color:var(--blue)}
+.privacy-section{margin-bottom:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(192,200,216,.08)}
+.privacy-section:last-child{border-bottom:none;margin-bottom:0}
+.privacy-section h3{font-size:1.1rem;font-weight:300;color:#fff;margin-bottom:1.2rem;
+  display:flex;align-items:center;gap:12px}
+.privacy-section h3::before{content:'';width:20px;height:1px;background:var(--blue);flex-shrink:0}
+.privacy-content p{font-size:.85rem;font-weight:300;line-height:1.9;
+  color:rgba(255,255,255,.45);margin-bottom:.9rem}
+.privacy-content ul{list-style:none;margin:.8rem 0;display:flex;flex-direction:column;gap:.6rem}
+.privacy-content ul li{font-size:.82rem;font-weight:300;color:rgba(255,255,255,.4);
+  padding-left:1.2rem;position:relative;line-height:1.65}
+.privacy-content ul li::before{content:'✦';position:absolute;left:0;font-size:.5rem;color:var(--blue);top:.2rem}
+.privacy-content ul li strong{color:rgba(255,255,255,.7)}
+.privacy-highlight{background:rgba(255,255,255,.03);border:1px solid rgba(192,200,216,.1);
+  padding:1.2rem 1.5rem;margin:1.5rem 0;font-size:.82rem;font-weight:300;
+  color:rgba(255,255,255,.4);line-height:1.8}
+.privacy-highlight strong{color:var(--blue)}
+.privacy-date{font-size:.65rem;letter-spacing:.15em;color:rgba(255,255,255,.2);
+  text-transform:uppercase;margin-top:2rem}
+.accent-blue{color:var(--blue)}
+
+/* ── RESPONSIVE NOSOTROS/PRIVACIDAD ──────────── */
+@media(max-width:900px){
+  .about-grid{grid-template-columns:1fr;gap:3rem}
+  .privacy-body{grid-template-columns:1fr}
+  .privacy-nav{position:static}
+}
